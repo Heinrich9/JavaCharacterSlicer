@@ -70,11 +70,23 @@ public class Main
 
         for (int i = 1; i < indexSlices.size(); i++)
         {
+            ArrayList <Character> temp = new ArrayList<>();
+
             for (int j = indexSlices.get(i-1); j <= indexSlices.get(i); j++)
             {
-                print(chars[j].toString());
+                temp.add(chars[j]);
+                //print(temp.get(j).toString());
             }
+            if(i > 1 || i < indexSlices.size())
+            {
+                if(i != 1)
+                {
+                    temp.remove(0);
+                }
+            }
+            charsMatrix.add(temp);
             print("********************");
         }
+        print(charsMatrix.toString());
     }
 }
