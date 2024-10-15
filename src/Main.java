@@ -81,7 +81,7 @@ public class Main
             {
                 if(i != 1)
                 {
-                    temp.remove(0);
+                    temp.remove(0);//TEST UPDATE
                 }
             }
             charsMatrix.add(temp);
